@@ -24,8 +24,8 @@ objLoader.load(
     const screenBorderRight = visibleWidthAtZDepth(-10, camera) / 2
     const screenBottom = -visibleHeightAtZDepth(-10, camera) / 2
 
-    addCube(children[0], nextSlide, screenBorderRight - 1, screenBottom + 1)
-    addCube(children[0], prevSlide, screenBorderRight - 1.5, screenBottom + 1)
+    addCube(children[0], nextSlide, screenBorderRight - 1.2, screenBottom + 1)
+    addCube(children[0], prevSlide, screenBorderRight - 2.2, screenBottom + 1)
 
     animate()
   }
@@ -34,7 +34,7 @@ objLoader.load(
 const addCube = (object, callbackFn, x, y) => {
   const cubeMesh = object.clone()
 
-  cubeMesh.scale.setScalar(.2)
+  cubeMesh.scale.setScalar(.3)
   cubeMesh.rotation.set(THREE.Math.degToRad(90), 0, 0)
 
   const boundingBox = new THREE.Mesh(
