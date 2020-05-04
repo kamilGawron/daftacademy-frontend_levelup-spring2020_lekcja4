@@ -8,6 +8,9 @@
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
   "devDependencies": {
     "express": "^4.17.1"
   }
